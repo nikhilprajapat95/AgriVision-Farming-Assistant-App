@@ -501,7 +501,7 @@ elif page == "ChatBot":
                     st.markdown(
                         f"""
                         <div style='background-color:#F1F0F0; padding:10px 15px; border-radius:15px; margin:5px 0; max-width:75%; text-align:left; margin-right:auto; color:#000;'>
-                        <b>🤖 Gemini:</b> {msg}
+                        <b>🌾AgriVision : </b> {msg}
                         </div>
                         """,
                         unsafe_allow_html=True,
@@ -565,6 +565,7 @@ elif page == "Downloads":
     st.write("Fertilizer CSV:", FERT_CSV if os.path.exists(FERT_CSV) else "Not found")
     st.write("Models folder:", MODELS_DIR)
     st.write("Logo:", LOGO_PATH if os.path.exists(LOGO_PATH) else "Not found")
+
 
 
 
