@@ -513,7 +513,7 @@ elif page == "ChatBot":
         # Send button
         if st.button("Send"):
             if user_input.strip():
-                with st.spinner("💭 Gemini is thinking..."):
+                with st.spinner("💭 thinking..."):
                     try:
                         response = model.generate_content(user_input)
                         bot_reply = response.text.strip()
@@ -565,5 +565,6 @@ elif page == "Downloads":
     st.write("Fertilizer CSV:", FERT_CSV if os.path.exists(FERT_CSV) else "Not found")
     st.write("Models folder:", MODELS_DIR)
     st.write("Logo:", LOGO_PATH if os.path.exists(LOGO_PATH) else "Not found")
+
 
 
